@@ -1,0 +1,32 @@
+from pynput.keyboard import Key, Controller
+import time
+
+keyboard = Controller()
+
+while True:
+  time.sleep(0.01)
+  keyboard.press("'")
+  keyboard.release("'")
+  time.sleep(0.01)
+  keyboard.press(Key.cmd)
+  time.sleep(0.01)
+  keyboard.press(Key.right)
+  keyboard.release(Key.right)
+  time.sleep(0.01)
+  keyboard.release(Key.cmd)
+  time.sleep(0.01)
+  keyboard.press("'")
+  keyboard.release("'")
+  time.sleep(0.01)
+  keyboard.press(",")
+  keyboard.release(",")
+  time.sleep(0.01)
+  keyboard.press(Key.cmd)
+  time.sleep(0.01)
+  keyboard.press(Key.left)
+  keyboard.release(Key.left)
+  time.sleep(0.01)
+  keyboard.release(Key.cmd)
+  time.sleep(0.01)
+  keyboard.press(Key.down)
+  keyboard.release(Key.down)
